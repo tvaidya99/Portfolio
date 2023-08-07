@@ -73,10 +73,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
     name: 'React JS',
     icon: reactjs,
   },
@@ -96,14 +92,10 @@ const technologies = [
     name: 'postgresql',
     icon: postgresql,
   },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
