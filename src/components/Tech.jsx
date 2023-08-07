@@ -25,3 +25,16 @@ const Tech = () => {
 };
 
 export default SectionWrapper(Tech, '');
+
+const { viewport } = useDeviceSize()
+
+let numBalls = 6 
+if(viewport.width > 768) numBalls = technologies.length
+
+return (
+  <div>
+    {Array(numBalls).fill().map(ball => (
+      <BallCanvas />
+    ))}
+  </div>
+)
