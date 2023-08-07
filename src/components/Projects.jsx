@@ -124,11 +124,7 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          My portfolio projects highlight my skills through real-world examples of my work with brief overviews and code links. They demonstrate my talent for solving complex problems, learning new technologies, and managing projects start to finish. For example, I created a Python serial driver, .NET visitor logging system with ASP.NET web app, and React Native barcode scanner app. Through these and other projects, I provide concrete proof of the valuable technical and project management expertise I offer.
         </motion.p>
       </div>
 
