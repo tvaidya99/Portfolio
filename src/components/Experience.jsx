@@ -103,7 +103,7 @@ const Experience = () => {
               onClick={() =>
                 window.open(
                   // Link to resume
-                  '/src/assets/TanmayResume.pdf'
+                  '/TanmayResume.pdf'
                 )
               }
               onMouseOver={() => {
