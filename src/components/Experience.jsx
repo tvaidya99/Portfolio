@@ -102,8 +102,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'src\assets\personal\Tanmay_Vaidya_Resume.pdf', //paste the link to your resume here
-                  '_blank'
+                  'src\assets\personal\Tanmay_Vaidya_Resume.pdf'
                 )
               }
               onMouseOver={() => {
