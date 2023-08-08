@@ -132,115 +132,92 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Grocery Application',
+    description: 'Grocery application based on C++ with custom data storage & handling.',
     tags: [
       {
-        name: 'react',
+        name: 'C++',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Data Structure',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'Git',
         color: 'pink-text-gradient',
       },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/tvaidya99/ECE4400-Project',
+    demo: 'https://github.com/tvaidya99/ECE4400-Project',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'JobPrep Backend',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Logic to Handle fornt-end requests and parse & score resume.',
     tags: [
       {
-        name: 'react',
+        name: 'NodeJS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Javascript',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'WebAPIs',
         color: 'pink-text-gradient',
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: 'https://github.com/tvaidya99/JobPrep-Backend',
+    demo: 'https://github.com/tvaidya99/JobPrep-Backend',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'JobPrep Frontend',
+    description: 'Contributed to the front-end of the JobPrep application for Jobseekers.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Astro',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Javascript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'HTML',
         color: 'pink-text-gradient',
       },
     ],
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    repo: 'https://github.com/arsevak/jobprep-frontend',
+    demo: 'https://github.com/arsevak/jobprep-frontend',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Personal Portfolio',
+    description: `Personal portfolio website built with ReactJS, TailwindCSS, and Framer Motion.`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'TailwindCSS',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'HTML5',
         color: 'pink-text-gradient',
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    repo: 'https://github.com/tvaidya99/Portfolio-Template-3.0',
+    demo: 'https://github.com/tvaidya99/Portfolio-Template-3.0',
   },
 ];
 
