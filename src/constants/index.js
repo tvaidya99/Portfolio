@@ -132,15 +132,15 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Grocery Application',
-    description: 'Grocery application based on C++ with custom data storage & handling.',
+    name: 'TDLAS Sensor Driver',
+    description: 'Created python based serial API for TDLAS Methane Sensor (Work Term 3).',
     tags: [
       {
-        name: 'C++',
+        name: 'Python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'Data Structure',
+        name: 'Pyserial',
         color: 'green-text-gradient',
       },
       {
@@ -149,8 +149,8 @@ const projects = [
       },
     ],
     image: komikult,
-    repo: 'https://github.com/tvaidya99/ECE4400-Project',
-    demo: 'https://github.com/tvaidya99/ECE4400-Project',
+    repo: 'https://github.com/tvaidya99',
+    demo: 'https://github.com/tvaidya99',
   },
   {
     id: 'project-2',
@@ -194,8 +194,8 @@ const projects = [
       },
     ],
     image: math,
-    repo: 'https://github.com/arsevak/jobprep-frontend',
-    demo: 'https://github.com/arsevak/jobprep-frontend',
+    repo: 'https://github.com/tvaidya99',
+    demo: 'https://github.com/tvaidya99',
   },
   {
     id: 'project-4',
