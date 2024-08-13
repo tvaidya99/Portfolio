@@ -100,7 +100,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'IT Controls Student WT4-WT6',
+    title: 'IT Controls Student WT4-6',
     company_name: 'Michelin North America',
     icon: coverhunt,
     iconBg: '#333333',
