@@ -100,25 +100,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'IT Controls Student WT6',
+    title: 'IT Controls Student WT4-WT6',
     company_name: 'Michelin North America',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Sep 2024 - Dec 2024',
-  },
-  {
-    title: 'IT Controls Student WT5',
-    company_name: 'Michelin North America',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Dec 2023 - Apr 2024',
-  },
-  {
-    title: 'IT Controls Student WT4',
-    company_name: 'Michelin North America',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'May 2023 - Aug 2023',
+    date: 'May 2023 - Dec 2024',
   },
   {
     title: 'Robotics Engineering Student WT3',
