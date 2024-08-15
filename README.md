@@ -2,9 +2,9 @@
 
 ## Links
 
-- Portfolio: https://tvaidya.engineer
+- Portfolio: https://tvaidya.top
 - Email: tvaidya@mun.ca
-- LinkedIn: https://www.linkedin.com/in/tanmayvaidya/
+- LinkedIn: www.linkedin.com/in/tvaidya99
 - GitHub: https://github.com/tvaidya99
 
 ## Getting Started
