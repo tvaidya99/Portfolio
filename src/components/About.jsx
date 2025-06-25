@@ -37,7 +37,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I'm a computer engineering student at Memorial University of Newfoundland. Through projects, internships, and coursework, I'm gaining broad experience in areas like software development, IT asset management, and hardware troubleshooting. On my site, you'll find details on my academic work and internship experiences. Outside of engineering, I enjoy traveling and meeting new people. As a student, I bring strong technical abilities, attention to detail, and a collaborative spirit to every project. Feel free to explore my site and reach out with any questions!
+       As a recent graduate in computer engineering from Memorial University of Newfoundland, I have developed a strong foundation in problem-solving, project planning, and technical communication. My academic journey and hands-on experiences have equipped me with expertise in hardware development, AI, and secure systems implementation. Feel free to explore my site and reach out with any questions!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
