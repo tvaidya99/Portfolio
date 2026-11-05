@@ -1,224 +1,164 @@
-import {
-  frontend,
-  backend,
-  ux,
-  prototyping,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  git,
-  figma,
-  docker,
-  postgresql,
-  rubyrails,
-  graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
-} from '../assets';
+import { memorialLogo, michelinLogo, nlHydroLogo } from '../assets';
 
 export const navLinks = [
-  {
-    id: 'about',
-    title: 'About',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-  },
-];
-
-const services = [
-  {
-    title: 'Software Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Project Manager',
-    icon: backend,
-  },
-  { 
-    title: 'Cyber Security',
-    icon: ux,
-  },
-  {
-    title: 'Asset Management',
-    icon: prototyping,
-  },
-];
-
-const technologies = [
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  // {
-  //   name: 'docker',
-  //   icon: docker,
-  // },
+  { id: 'about', title: 'Overview' },
+  { id: 'experience', title: 'Experience' },
+  { id: 'projects', title: 'Projects' },
+  { id: 'skills', title: 'Skills' },
+  { id: 'contact', title: 'Contact' },
 ];
 
 const experiences = [
   {
-    title: 'IT Controls Student WT4-6',
+    title: 'Site IT Technician 2 (TIS)',
     company_name: 'Michelin North America',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'May 2023 - Dec 2024',
+    logo: michelinLogo,
+    mark: 'M',
+    markBg: '#ffffff',
+    markColor: '#141414',
+    date: 'May 2025 - Present',
+    type: 'Full-time',
+    summary: 'Maintain site infrastructure and equipment, monitor service performance, resolve incidents, and keep operational documentation and preventive maintenance plans current.',
+    skills: ['IT operations', 'Infrastructure maintenance', 'Incident response', 'Application support'],
   },
   {
-    title: 'Robotics Engineering Student WT3',
+    title: 'IT Controls Engineer (Co-op)',
+    company_name: 'Michelin North America',
+    logo: michelinLogo,
+    mark: 'M',
+    markBg: '#ffffff',
+    markColor: '#141414',
+    date: 'Sep 2024 - Dec 2024',
+    type: 'Co-op',
+    summary: 'Supported infrastructure modernization and cybersecurity assessments, developed procedures, and coordinated technical work with site teams.',
+    skills: ['Cybersecurity', 'Infrastructure modernization', 'SOP development', 'Risk mitigation'],
+  },
+  {
+    title: 'IT Controls Engineer (Co-op)',
+    company_name: 'Michelin North America',
+    logo: michelinLogo,
+    mark: 'M',
+    markBg: '#ffffff',
+    markColor: '#141414',
+    date: 'Winter 2024',
+    type: 'Co-op',
+    summary: 'Developed a secure Linux image, configured Active Directory authentication, and helped transition systems from legacy operating systems.',
+    skills: ['Linux', 'Active Directory', 'System administration', 'Hardware deployment'],
+  },
+  {
+    title: 'Information Systems Engineer (Co-op)',
+    company_name: 'Michelin North America',
+    logo: michelinLogo,
+    mark: 'M',
+    markBg: '#ffffff',
+    markColor: '#141414',
+    date: 'May 2023 - Aug 2023',
+    type: 'Co-op',
+    summary: 'Performed security and compliance checks, supported hardware and network operations, and worked with cross-platform mobile tools.',
+    skills: ['Security auditing', 'Cisco networking', 'Dart', 'Flutter', 'React Native'],
+  },
+  {
+    title: 'Robotics Science Student (Co-op)',
     company_name: 'Wood PLC',
-    icon: microverse,
-    iconBg: '#333333',
+    mark: 'WOOD',
+    markBg: '#dcebe1',
+    markColor: '#214535',
     date: 'Sep 2022 - Dec 2022',
+    type: 'Co-op',
+    summary: 'Built a Python serial driver that processed sensor readings at 10 Hz and saved them as JSON; also created photogrammetry models and integrated software changes for a Spot robot.',
+    skills: ['Python', 'Linux', 'Serial communications', 'RealityCapture', 'Bash', 'Docker'],
   },
   {
-    title: 'Junior IT Engineer WT2',
+    title: 'Operation Technology Intern (Co-op)',
     company_name: 'NL Hydro',
-    icon: kelhel,
-    iconBg: '#333333',
+    logo: nlHydroLogo,
+    mark: 'NLH',
+    markBg: '#111820',
+    markColor: '#f3f3f3',
     date: 'Jan 2022 - Apr 2022',
+    type: 'Co-op',
+    summary: 'Built a .NET service to process data from three databases and an ASP.NET application for visitor records and operational tools.',
+    skills: ['C#', '.NET', 'ASP.NET', 'MySQL', 'C++'],
   },
   {
-    title: 'Junior IT Support Engineer WT1',
-    company_name: 'Memorial University',
-    icon: dcc,
-    iconBg: '#333333',
+    title: 'Junior IT Technician (Co-op)',
+    company_name: 'Engineering Computing Services, Memorial University',
+    logo: memorialLogo,
+    mark: 'MUN',
+    markBg: '#ffffff',
+    markColor: '#141414',
     date: 'Jan 2021 - May 2021',
+    type: 'Co-op',
+    summary: 'Assembled and repaired computers, supported faculty and staff, and set up Zabbix monitoring for Linux and Windows servers.',
+    skills: ['IT support', 'Zabbix', 'Linux', 'Windows', 'Hardware troubleshooting'],
   },
 ];
 
 const projects = [
   {
-    id: 'project-1',
-    name: 'TDLAS Sensor Driver',
-    description: 'Created python based serial API for TDLAS Methane Sensor (Work Term 3).',
-    tags: [
-      {
-        name: 'Python',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Pyserial',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Git',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/tvaidya99',
-    demo: 'https://github.com/tvaidya99',
+    id: 'pallet-tracking',
+    name: 'Pallet Tracking System',
+    type: 'Capstone project',
+    date: 'Apr 2025',
+    icon: 'tracking',
+    description: 'Partnered with Michelin Pictou to develop a real-time pallet tracking system using LoRaWAN.',
+    tags: ['LoRaWAN', 'Real-time systems', 'Capstone'],
   },
   {
-    id: 'project-2',
-    name: 'JobPrep Backend',
-    description:
-      'Logic to Handle fornt-end requests and parse & score resume.',
-    tags: [
-      {
-        name: 'NodeJS',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Javascript',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'WebAPIs',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: leaderboard,
-    repo: 'https://github.com/tvaidya99/JobPrep-Backend',
-    demo: 'https://github.com/tvaidya99/JobPrep-Backend',
+    id: 'flight-scraper',
+    name: 'Flight Price Scraper',
+    type: 'Automation',
+    date: 'Nov 2022',
+    icon: 'flight',
+    description: 'Created an automated flight-price scraper and alert program using Selenium.',
+    tags: ['Python', 'Selenium', 'Automation'],
   },
   {
-    id: 'project-3',
-    name: 'JobPrep Frontend',
-    description: 'Contributed to the front-end of the JobPrep application for Jobseekers.',
-    tags: [
-      {
-        name: 'Astro',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Javascript',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'HTML',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/tvaidya99',
-    demo: 'https://github.com/tvaidya99',
+    id: 'visitor-logging',
+    name: '.NET Visitor Logging System',
+    type: 'Work-term project',
+    date: 'Mar 2022',
+    icon: 'logging',
+    description: 'Built a Windows service that reads card-swipe records, queries a SQL database, and produces a current visitor list.',
+    tags: ['C#', '.NET', 'SQL', 'Windows services'],
   },
   {
-    id: 'project-4',
-    name: 'Personal Portfolio',
-    description: `Personal portfolio website built with ReactJS, TailwindCSS, and Framer Motion.`,
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'TailwindCSS',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'HTML5',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/tvaidya99/Portfolio-Template-3.0',
-    demo: 'https://github.com/tvaidya99/Portfolio-Template-3.0',
+    id: 'visitor-web-app',
+    name: 'ASP.NET Visitor Management App',
+    type: 'Work-term project',
+    date: 'Apr 2022',
+    icon: 'web',
+    description: 'Developed an ASP.NET and jQuery web application to display SQL data and manage entries dynamically.',
+    tags: ['ASP.NET', 'jQuery', 'SQL'],
+  },
+  {
+    id: 'barcode-scanner',
+    name: 'Barcode Scanner Application',
+    type: 'Mobile application',
+    date: '2022',
+    icon: 'barcode',
+    description: 'Built a cross-platform React Native app that reads barcode-scanner input, performs database operations, and provides visual feedback to operators.',
+    tags: ['React Native', 'Mobile development', 'Database'],
   },
 ];
 
-export { services, technologies, experiences, projects };
+const skillGroups = [
+  {
+    name: 'IT Operations',
+    items: ['Infrastructure maintenance', 'Incident response', 'Application support', 'Zabbix', 'Windows', 'Linux / Unix'],
+  },
+  {
+    name: 'Software & Automation',
+    items: ['Python', 'C#', 'C++', '.NET', 'ASP.NET', 'SQL / MySQL', 'Bash', 'Selenium'],
+  },
+  {
+    name: 'Systems & Security',
+    items: ['IT controls', 'Cybersecurity', 'Active Directory', 'Cisco networking', 'Hardware deployment', 'Technical documentation'],
+  },
+  {
+    name: 'Embedded & Mobile',
+    items: ['Dart', 'Flutter', 'React Native', 'Serial communications', 'LoRaWAN', 'RealityCapture'],
+  },
+];
+
+export { experiences, projects, skillGroups };

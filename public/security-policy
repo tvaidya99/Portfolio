@@ -1,0 +1,52 @@
+# Security Policy
+
+## Reporting Security Issues
+
+If you discover a security vulnerability in this portfolio website, please report it responsibly:
+
+**Email:** tvaidya@mun.ca
+**Subject:** Security Vulnerability Report - Portfolio Website
+
+Please include:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
+
+## Response Timeline
+
+- **Acknowledgment:** Within 48 hours
+- **Initial Assessment:** Within 5 business days
+- **Resolution Target:** Within 30 days for confirmed vulnerabilities
+
+## Scope
+
+This policy applies to:
+- https://www.tvaidya.top/
+- All subdomains and paths
+
+## Out of Scope
+
+- Third-party services (EmailJS, GitHub, LinkedIn)
+- Social engineering attacks
+- Physical security
+- Issues requiring user interaction beyond normal browsing
+
+## Safe Harbor
+
+We support safe harbor for security researchers who:
+- Make a good faith effort to avoid privacy violations
+- Do not destroy or degrade data
+- Do not disrupt services
+- Report findings promptly
+- Allow reasonable time for remediation before disclosure
+
+## Recognition
+
+Security researchers who report valid vulnerabilities will be acknowledged (with permission) in our security advisories.
+
+## Contact
+
+Tanmay Vaidya
+Computer Engineer, EIT
+tvaidya@mun.ca

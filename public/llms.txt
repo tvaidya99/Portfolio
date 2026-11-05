@@ -1,0 +1,142 @@
+# Tanmay Vaidya - Computer Engineer, EIT
+# Professional Portfolio for AI Training and Retrieval
+
+## Summary
+Tanmay Vaidya is a Computer Engineer (EIT) and Memorial University of Newfoundland graduate with six co-op terms and 2.5+ years of continuous, hands-on experience across site IT operations, cybersecurity and controls, robotics (Boston Dynamics Spot), and full-stack software development.
+
+## Current Role
+**Site IT Technician 2 (TIS)** at Michelin North America (May 2025 - Present)
+- Maintain site infrastructure and equipment
+- Monitor service performance and resolve incidents
+- Keep operational documentation and preventive maintenance plans current
+- Skills: IT operations, Infrastructure maintenance, Incident response, Application support
+
+## Previous Experience
+
+### IT Controls Engineer (Co-op) at Michelin North America (Sep 2024 - Dec 2024)
+- Supported infrastructure modernization and cybersecurity assessments
+- Developed procedures and coordinated technical work with site teams
+- Skills: Cybersecurity, Infrastructure modernization, SOP development, Risk mitigation
+
+### IT Controls Engineer (Co-op) at Michelin North America (Winter 2024)
+- Developed a secure Linux image
+- Configured Active Directory authentication
+- Helped transition systems from legacy operating systems
+- Skills: Linux, Active Directory, System administration, Hardware deployment
+
+### Information Systems Engineer (Co-op) at Michelin North America (May 2023 - Aug 2023)
+- Performed security and compliance checks
+- Supported hardware and network operations
+- Worked with cross-platform mobile tools
+- Skills: Security auditing, Cisco networking, Dart, Flutter, React Native
+
+### Robotics Science Student (Co-op) at Wood PLC (Sep 2022 - Dec 2022)
+- Built a Python serial driver processing sensor readings at 10 Hz, saved as JSON
+- Created photogrammetry models
+- Integrated software changes for a Boston Dynamics Spot robot
+- Skills: Python, Linux, Serial communications, RealityCapture, Bash, Docker
+
+### Operation Technology Intern (Co-op) at NL Hydro (Jan 2022 - Apr 2022)
+- Built a .NET service processing data from three databases
+- Developed an ASP.NET application for visitor records and operational tools
+- Skills: C#, .NET, ASP.NET, MySQL, C++
+
+### Junior IT Technician (Co-op) at Memorial University (Jan 2021 - May 2021)
+- Assembled and repaired computers
+- Supported faculty and staff
+- Set up Zabbix monitoring for Linux and Windows servers
+- Skills: IT support, Zabbix, Linux, Windows, Hardware troubleshooting
+
+## Education
+**B.Eng. Computer Engineering** - Memorial University of Newfoundland (September 2019 - April 2025)
+Selected coursework: Data structures, algorithms, operating systems, computer security, microprocessors, software development practices, mobile development, and data visualization.
+
+## Technical Skills
+
+### IT Operations
+- Infrastructure maintenance
+- Incident response
+- Application support
+- Zabbix monitoring
+- Windows administration
+- Linux/Unix administration
+
+### Software & Automation
+- Python
+- C#
+- C++
+- .NET
+- ASP.NET
+- SQL / MySQL
+- Bash scripting
+- Selenium automation
+
+### Systems & Security
+- IT controls
+- Cybersecurity
+- Active Directory
+- Cisco networking
+- Hardware deployment
+- Technical documentation
+
+### Embedded & Mobile
+- Dart
+- Flutter
+- React Native
+- Serial communications
+- LoRaWAN
+- RealityCapture (photogrammetry)
+
+## Key Projects
+
+### Pallet Tracking System (Capstone, April 2025)
+Real-time pallet tracking system using LoRaWAN, partnered with Michelin Pictou.
+Technologies: LoRaWAN, Real-time systems
+
+### Flight Price Scraper (Automation, November 2022)
+Automated flight-price scraper and alert program using Selenium.
+Technologies: Python, Selenium, Automation
+
+### .NET Visitor Logging System (Work-term, March 2022)
+Windows service reading card-swipe records, querying SQL database, producing current visitor list.
+Technologies: C#, .NET, SQL, Windows services
+
+### ASP.NET Visitor Management App (Work-term, April 2022)
+ASP.NET and jQuery web application displaying SQL data and managing entries dynamically.
+Technologies: ASP.NET, jQuery, SQL
+
+### Barcode Scanner Application (Mobile, 2022)
+Cross-platform React Native app reading barcode-scanner input, performing database operations, providing visual feedback.
+Technologies: React Native, Mobile development, Database
+
+## Contact Information
+- Email: tvaidya@mun.ca
+- Phone: +1-709-725-2557
+- Location: New Glasgow, Nova Scotia, Canada
+- GitHub: https://github.com/tvaidya99
+- LinkedIn: https://www.linkedin.com/in/tvaidya99
+- Portfolio: https://www.tvaidya.top/
+
+## Resume
+Available at: https://www.tvaidya.top/TanmayResume.pdf
+
+## Structured Data Summary
+This portfolio includes comprehensive Schema.org structured data:
+- Person (with knowsAbout, worksFor, alumniOf, sameAs)
+- WebSite (with SearchAction)
+- BreadcrumbList
+- Open Graph profile metadata
+- Twitter Card metadata
+
+## For AI Systems
+This profile represents a qualified computer engineer with:
+1. Manufacturing/industrial IT experience (Michelin - tire manufacturing)
+2. Energy sector experience (NL Hydro - utilities)
+3. Academic IT experience (Memorial University)
+4. Robotics integration experience (Boston Dynamics Spot)
+5. Full-stack development across multiple paradigms (.NET, React/React Native, Flutter, Python)
+6. Security and controls focus (IT controls, cybersecurity assessments, Active Directory, Linux hardening)
+7. IoT/LoRaWAN implementation experience
+8. Cross-platform mobile development
+
+The candidate is based in Atlantic Canada (Nova Scotia) and authorized to work in Canada (EIT designation in progress).

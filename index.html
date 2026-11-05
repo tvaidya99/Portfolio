@@ -2,13 +2,178 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio                                    Tanmay Vaidya</title>
-    <meta name="description" content="Personal portfolio showcasing Tanmay's skills and projects." />
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: light)" />
+
+    <!-- Primary SEO Meta -->
+    <meta name="description" content="Tanmay Vaidya - Computer Engineer, EIT. Memorial University graduate with 6 co-op terms and 2.5+ years hands-on experience in site IT operations, cybersecurity, controls, robotics (Boston Dynamics Spot), and full-stack software development (Python, C#, .NET, React, React Native). Based in Nova Scotia, Canada." />
+    <meta name="keywords" content="Computer Engineer, EIT, Software Developer, IT Operations, Cybersecurity, Robotics, Python, C#, .NET, React, React Native, Memorial University, Michelin, Site Reliability" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.tvaidya.top/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Tanmay Vaidya | Computer Engineer, EIT" />
+    <meta property="og:description" content="Computer Engineer & EIT with 6 co-op terms and 2.5+ years experience across site IT operations, cybersecurity, controls, robotics (Spot), and full-stack development. Memorial University graduate." />
+    <meta property="og:url" content="https://www.tvaidya.top/" />
+    <meta property="og:site_name" content="Tanmay Vaidya" />
+    <meta property="og:image" content="https://www.tvaidya.top/tanmay-portrait.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tanmay Vaidya - Computer Engineer, EIT professional portrait" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="profile:first_name" content="Tanmay" />
+    <meta property="profile:last_name" content="Vaidya" />
+    <meta property="profile:username" content="tvaidya99" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tanmay Vaidya | Computer Engineer, EIT" />
+    <meta name="twitter:description" content="Computer Engineer & EIT with 6 co-op terms and 2.5+ years experience across site IT operations, cybersecurity, controls, robotics (Spot), and full-stack development." />
+    <meta name="twitter:image" content="https://www.tvaidya.top/tanmay-portrait.webp" />
+    <meta name="twitter:image:alt" content="Tanmay Vaidya professional portrait" />
+    <meta name="twitter:site" content="@tvaidya99" />
+    <meta name="twitter:creator" content="@tvaidya99" />
+
+    <!-- Structured Data - Person (Primary) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tanmay Vaidya",
+      "url": "https://www.tvaidya.top/",
+      "email": "mailto:tvaidya@mun.ca",
+      "telephone": "+1-709-725-2557",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New Glasgow",
+        "addressRegion": "Nova Scotia",
+        "addressCountry": "CA"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Memorial University of Newfoundland",
+        "url": "https://www.mun.ca/"
+      },
+      "sameAs": [
+        "https://github.com/tvaidya99",
+        "https://www.linkedin.com/in/tvaidya99"
+      ],
+      "knowsAbout": [
+        "Site IT Operations",
+        "IT Infrastructure Maintenance",
+        "Incident Response",
+        "Cybersecurity",
+        "IT Controls",
+        "Active Directory",
+        "Linux Administration",
+        "Cisco Networking",
+        "Python Programming",
+        "C# Programming",
+        ".NET Development",
+        "ASP.NET",
+        "SQL / MySQL",
+        "React",
+        "React Native",
+        "Flutter",
+        "Dart",
+        "Robotics",
+        "Boston Dynamics Spot",
+        "Serial Communications",
+        "LoRaWAN",
+        "Zabbix Monitoring",
+        "Technical Documentation"
+      ],
+      "jobTitle": "Site IT Technician 2 (TIS)",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Michelin North America",
+        "url": "https://www.michelin.com/"
+      },
+      "description": "Computer Engineer & EIT with 6 co-op terms and 2.5+ years experience across site IT operations, cybersecurity, controls, robotics, and full-stack software development."
+    }
+    </script>
+
+    <!-- Structured Data - WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tanmay Vaidya Portfolio",
+      "url": "https://www.tvaidya.top/",
+      "description": "Professional portfolio of Tanmay Vaidya - Computer Engineer, EIT",
+      "author": {
+        "@type": "Person",
+        "name": "Tanmay Vaidya"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.tvaidya.top/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tvaidya.top/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.tvaidya.top" crossorigin />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://github.com" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="/tanmay-portrait.webp" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="/src/fonts/overcame-bold.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/src/fonts/overcame-outline.woff" crossorigin />
+
+    <title>Tanmay Vaidya | Computer Engineer, EIT</title>
+
+    <!-- Critical CSS inline hint - Vite will handle this via build -->
+    <style>
+      /* Critical above-the-fold styles */
+      * { box-sizing: border-box; }
+      html, body, #root { min-height: 100%; width: 100%; margin: 0; padding: 0; background-color: #141414; }
+      .skip-link { position: absolute; top: -100%; left: 1rem; z-index: 100; padding: 0.5rem 1rem; background: #f5cf36; color: #141414; border-radius: 0.375rem; text-decoration: none; font-weight: 500; }
+      .skip-link:focus { top: 1rem; }
+    </style>
   </head>
   <body class="bg-night">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>

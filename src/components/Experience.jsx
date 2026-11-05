@@ -1,134 +1,92 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
-import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
-import { textVariant } from '../utils/motion';
+import { textVariant, fadeIn } from '../utils/motion';
 
-const ExperienceCard = ({ experience }) => (
-  <VerticalTimelineElement
-    contentStyle={{
-      background: '#eaeaec',
-      color: '#292929',
-      boxShadow:
-        'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-    }}
-    contentArrowStyle={{
-      borderRight: '7px solid  #232631',
-    }}
-    date={
-      <div>
-        <h3 className="text-dim text-[18px] font-bold font-beckman">
-          {experience.date}
-        </h3>
+const ExperienceCard = ({ experience, index }) => (
+  <motion.li
+    variants={fadeIn('up', 'tween', index * 0.04, 0.35)}
+    className="relative border-l border-white/15 pb-8 pl-6 last:border-transparent last:pb-0 sm:pl-8"
+  >
+    <span className="absolute -left-[5px] top-1 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-night" aria-hidden="true" />
+    <article className="rounded-lg border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+      <div className="flex items-start gap-4">
+        <div
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-black/5 font-beckman font-bold"
+          style={{ backgroundColor: experience.markBg, color: experience.markColor }}
+          aria-hidden="true"
+        >
+          {experience.logo ? (
+            <img
+              src={experience.logo}
+              alt={`${experience.company_name} logo`}
+              className="max-h-8 max-w-10 object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          ) : (
+            <span className={experience.mark.length > 1 ? 'text-[9px] tracking-wide' : 'text-xl'}>{experience.mark}</span>
+          )}
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-semibold uppercase tracking-wider text-primary">{experience.type} · {experience.date}</p>
+          <h3 className="mt-1 font-beckman text-lg font-bold leading-snug text-white-100 sm:text-xl">{experience.title}</h3>
+          <p className="mt-1 text-sm font-medium text-silver">{experience.company_name}</p>
+        </div>
       </div>
-    }
-    iconStyle={{ background: experience.iconBg }}
-    icon={
-      <div className="flex justify-center items-center w-full h-full">
-        <img
-          src={experience.icon}
-          alt={experience.company_name}
-          className="w-[60%] h-[60%] object-contain"
-        />
-      </div>
-    }>
-    <div>
-      <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
-        {experience.title}
-      </h3>
-      <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
-        {experience.company_name}
-      </p>
-    </div>
-  </VerticalTimelineElement>
+      <p className="mt-4 text-sm leading-6 text-silver">{experience.summary}</p>
+      <ul className="mt-4 flex flex-wrap gap-2" aria-label="Skills used">
+        {experience.skills.map((skill) => (
+          <li key={skill} className="rounded border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs text-taupe">{skill}</li>
+        ))}
+      </ul>
+    </article>
+  </motion.li>
 );
 
-const Experience = () => {
-  return (
-    <>
+const Experience = () => (
+  <section id="experience" aria-labelledby="experience-heading" className="py-10 sm:py-14">
+    <div className={`${styles.innerWidth} mx-auto`}>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          My Proffesional Journey
+        <p className={styles.sectionSubTextLight} id="experience-heading">
+          My Professional Journey
         </p>
-        <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
+        <h2 className={styles.sectionHeadTextLight}>
           Work Experience
         </h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline className="vertical-timeline-custom-line">
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
-          <VerticalTimelineElement
-            contentStyle={{
-              background: '#eaeaec',
-              color: '#292929',
-              boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-            contentArrowStyle={{
-              borderRight: '7px solid  #232631',
-            }}
-            iconStyle={{ background: '#333333' }}
-            icon={
-              <div className="flex justify-center items-center w-full h-full">
-                <img
-                  src={resume}
-                  alt="resume"
-                  className="w-[45%] h-[45%] object-contain"
-                />
-              </div>
-            }>
-            <button
-              className="live-demo flex justify-between 
-              sm:text-[18px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() =>
-                window.open(
-                  // Link to resume
-                  '/TanmayResume.pdf'
-                )
-              }
-              onMouseOver={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', downloadHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
-              MY RESUME
-              <img
-                src={download}
-                alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] 
-                w-[23px] h-[23px] object-contain"
-              />
-            </button>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
-      </div>
-    </>
-  );
-};
+      <motion.div
+        variants={fadeIn('up', 'spring', 0.1, 0.6)}
+        className="mt-5 max-w-3xl text-sm leading-6 text-silver sm:text-base"
+      >
+        Six co-op terms across industry and campus roles, followed by a full-time position in site IT operations.
+      </motion.div>
 
-export default SectionWrapper(Experience, 'work');
+      <motion.ol
+        variants={fadeIn('up', 'tween', 0.15, 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        className="mt-8"
+        aria-label="Work experience timeline"
+      >
+        {experiences.map((experience, index) => (
+          <ExperienceCard key={`${experience.company_name}-${experience.title}-${experience.date}`} experience={experience} index={index} />
+        ))}
+      </motion.ol>
+
+      <a
+        href="/TanmayResume.pdf"
+        download
+        className="mt-8 inline-flex min-h-11 items-center gap-2 rounded border border-primary/50 px-4 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-eerieBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        Download résumé (PDF)
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </section>
+);
+
+export default SectionWrapper(Experience, 'experience');

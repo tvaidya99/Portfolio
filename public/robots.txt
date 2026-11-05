@@ -1,0 +1,18 @@
+# Robots.txt for Tanmay Vaidya Portfolio
+# https://www.tvaidya.top/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.tvaidya.top/sitemap.xml
+
+# Crawl-delay for respectful crawling (optional)
+# Crawl-delay: 10
+
+# Disallow private/admin paths (none in this SPA)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Host directive (deprecated but still used by some)
+Host: https://www.tvaidya.top

@@ -1,0 +1,47 @@
+{
+  "name": "Tanmay Vaidya | Computer Engineer, EIT",
+  "short_name": "Tanmay Vaidya",
+  "description": "Professional portfolio of Tanmay Vaidya - Computer Engineer, EIT with 6 co-op terms and 2.5+ years experience in IT operations, cybersecurity, robotics, and software development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-CA",
+  "categories": ["portfolio", "technology", "engineering"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch with Tanmay",
+      "url": "/#contact",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "View portfolio projects",
+      "url": "/#projects",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Download Resume",
+      "short_name": "Resume",
+      "description": "Download PDF resume",
+      "url": "/TanmayResume.pdf",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

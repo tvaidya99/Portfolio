@@ -6,15 +6,12 @@ const SectionWrapper = (Component, idName) => {
   function HOC() {
     return (
       <motion.section
-        variants={staggerContainer()}
+        id={idName}
+        variants={staggerContainer(0.05, 0.03)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
-        <span className="hash-span" id={idName}>
-          &nbsp;
-        </span>
-
+        viewport={{ once: true, amount: 0.1 }}
+        className={`${styles.padding} relative z-0 mx-auto w-full max-w-7xl scroll-mt-20`}>
         <Component />
       </motion.section>
     );
