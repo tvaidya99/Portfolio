@@ -9,9 +9,6 @@ export default defineConfig({
     watch: {
       ignored: ['**/src/assets/company/nlhydro.png'],
     },
-    headers: {
-      'Cache-Control': 'public, max-age=31536000, immutable',
-    },
   },
   build: {
     // Optimize for production

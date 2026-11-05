@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { MotionConfig } from 'framer-motion';
+import { styles } from './styles';
 import {
   About,
   Contact,

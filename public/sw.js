@@ -3,9 +3,8 @@
  * Provides offline support and caching for optimal performance
  */
 
-const CACHE_NAME = 'tanmay-portfolio-v1';
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const STATIC_CACHE = 'static-v2';
+const DYNAMIC_CACHE = 'dynamic-v2';
 
 // Assets to cache immediately
 const STATIC_ASSETS = [
@@ -31,13 +30,7 @@ self.addEventListener('install', (event) => {
 // Activate event - clean up old caches
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames
-          .filter((name) => name !== STATIC_CACHE && name !== DYNAMIC_CACHE)
-          .map((name) => caches.delete(name))
-      );
-    })
+    Promise.all([caches.delete('static-v1'), caches.delete('dynamic-v1')])
   );
   self.clients.claim();
 });
@@ -53,31 +46,24 @@ self.addEventListener('fetch', (event) => {
   // Skip cross-origin requests (except for fonts)
   if (url.origin !== location.origin && !url.pathname.match(/\.(woff2?|ttf)$/)) return;
 
-  event.respondWith(
-    caches.match(request).then((cachedResponse) => {
-      // Return cached response if available
-      if (cachedResponse) {
-        // Update cache in background
-        event.waitUntil(
-          fetch(request).then((networkResponse) => {
-            if (networkResponse.ok) {
-              caches.open(DYNAMIC_CACHE).then((cache) => {
-                cache.put(request, networkResponse.clone());
-              });
-            }
-          }).catch(() => {})
-        );
-        return cachedResponse;
-      }
+  // Never cache development modules or Vite's hot-reload client.
+  if (
+    url.pathname.startsWith('/src/') ||
+    url.pathname.startsWith('/@vite/') ||
+    url.pathname.startsWith('/node_modules/.vite/') ||
+    url.pathname === '/@react-refresh'
+  ) {
+    return;
+  }
 
-      // Fetch from network
-      return fetch(request).then((networkResponse) => {
+  event.respondWith(
+    fetch(request)
+      .then((networkResponse) => {
         // Cache successful responses
         if (networkResponse.ok) {
           const responseClone = networkResponse.clone();
-          caches.open(DYNAMIC_CACHE).then((cache) => {
-            cache.put(request, responseClone);
-          });
+          const cacheName = request.mode === 'navigate' ? STATIC_CACHE : DYNAMIC_CACHE;
+          event.waitUntil(caches.open(cacheName).then((cache) => cache.put(request, responseClone)));
         }
         return networkResponse;
       }).catch(() => {
@@ -87,8 +73,7 @@ self.addEventListener('fetch', (event) => {
         }
         // Return a generic offline response for other requests
         return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
-      });
-    })
+      }),
   );
 });
 
